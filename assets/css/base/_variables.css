@@ -1,0 +1,25 @@
+:root {
+    --primary-blue: #058AD9;
+    --dark-blue: #01395C;
+    --accent-blue: #171765;
+    --light-bg: #f8f9fa;
+    --text-dark: #343a40;
+    --text-muted: #6c757d;
+    --white: #ffffff;
+    --off-white: rgba(255, 255, 255, 0.9);
+    --semi-transparent-white: rgba(255, 255, 255, 0.1);
+    --shadow-light: rgba(0, 0, 0, 0.05);
+    --shadow-medium: rgba(0, 0, 0, 0.08);
+    --shadow-heavy: rgba(0, 0, 0, 0.15);
+    --green-base: #28a745;
+    --green-dark: #1e7e34;
+    --sidebar-width-lg: 250px;
+    --sidebar-width-sm: 80px;
+    --sidebar-bg: var(--dark-blue);
+    --sidebar-text: var(--white);
+    --sidebar-link-hover-bg: var(--primary-blue);
+    --sidebar-active-bg: var(--primary-blue);
+    --sidebar-active-color: var(--white);
+    --sidebar-toggle-btn-color: var(--primary-blue);
+    --primary-highlight: var(--primary-blue);
+}
