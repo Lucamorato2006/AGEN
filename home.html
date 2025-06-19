@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Agendas - Agen</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="dashboard-page-body d-flex">
+
+    <input type="checkbox" id="sidebarToggle" class="d-none">
+    <label for="sidebarToggle" class="sidebar-toggle-btn">
+        <i class="fas fa-bars"></i>
+    </label>
+
+    <div class="sidebar d-flex flex-column flex-shrink-0 p-3 text-white">
+        <a href="home.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="assets/images/agen_logo.png" alt="Logo Agen" class="sidebar-logo me-2">
+            <span class="fs-4 d-lg-inline">Agen</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="home.html" class="nav-link text-white active" aria-current="page">
+                    <i class="fas fa-home me-2"></i>
+                    <span class="d-lg-inline">Início</span>
+                </a>
+            </li>
+            <li>
+                <a href="agendas.html" class="nav-link text-white">
+                    <i class="fas fa-calendar-alt me-2"></i>
+                    <span class="d-lg-inline">Agendas</span>
+                </a>
+            </li>
+            <li>
+                <a href="consultores.html" class="nav-link text-white">
+                    <i class="fas fa-users me-2"></i>
+                    <span class="d-lg-inline">Consultores</span>
+                </a>
+            </li>
+            <li>
+                <a href="empresas_parceiras.html" class="nav-link text-white">
+                    <i class="fas fa-building me-2"></i>
+                    <span class="d-lg-inline">Empresas Parceiras</span>
+                </a>
+            </li>
+            <li>
+                <a href="enviar_agendas_email.html" class="nav-link text-white">
+                    <i class="fas fa-envelope-open-text me-2"></i>
+                    <span class="d-lg-inline">Enviar Agendas</span>
+                </a>
+            </li>
+            <li>
+                <a href="techleads.html" class="nav-link text-white">
+                    <i class="fas fa-user-tie me-2"></i>
+                    <span class="d-lg-inline">Techleads</span>
+                </a>
+            </li>
+            <li>
+                <a href="perfil.html" class="nav-link text-white">
+                    <i class="fas fa-user-circle me-2"></i>
+                    <span class="d-lg-inline">Meu Perfil</span>
+                </a>
+            </li>
+            <li>
+                <a href="configuracoes.html" class="nav-link text-white">
+                    <i class="fas fa-cogs me-2"></i>
+                    <span class="d-lg-inline">Configurações</span>
+                </a>
+            </li>
+            <hr>
+            
+        </ul>
+        <hr>
+        <a href="login.html" class="nav-link text-white"><i class="fas fa-sign-out-alt me-2"></i>Sair</a>
+    </div>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+                <li><a class="dropdown-item" href="configuracoes.html">Configurações</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="login.html">Sair</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="main-content-with-sidebar p-4">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">Dashboard</h1>
+                
+            </div>
+
+            <div class="container-fluid py-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card text-white bg-primary mb-3 shadow-sm dashboard-card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-users me-2"></i> Consultores Ativos</h5>
+                                <p class="card-text display-4">15</p>
+                                <a href="consultores.html" class="text-white text-decoration-none stretched-link">Ver Consultores <i class="fas fa-arrow-circle-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-warning mb-3 shadow-sm dashboard-card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-calendar-check me-2"></i> Agendas Confirmadas</h5>
+                                <p class="card-text display-4">42</p>
+                                <a href="agendas.html" class="text-dark text-decoration-none stretched-link">Ver Agendas <i class="fas fa-arrow-circle-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-info mb-3 shadow-sm dashboard-card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-envelope-open-text me-2"></i> E-mails Enviados Hoje</h5>
+                                <p class="card-text display-4">12</p>
+                                <a href="enviar_agendas_email.html" class="text-white text-decoration-none stretched-link">Enviar E-mails <i class="fas fa-arrow-circle-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-danger mb-3 shadow-sm dashboard-card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-clipboard-list me-2"></i> Próximas Atividades</h5>
+                                <p class="card-text display-4">3</p>
+                                <a href="agendas.html" class="text-white text-decoration-none stretched-link">Ver Atividades <i class="fas fa-arrow-circle-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 text-center">
+                    <p class="text-muted">Utilize o menu lateral para navegar entre as seções do sistema.</p>
+                </div>
+            </div>
+        </div>
+    
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>
